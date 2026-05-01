@@ -1,0 +1,9 @@
+numpy
+spectral
+pandas
+matplotlib
+scipy
+ipympl
+ipywidgets
+ipykernel
+openpyxl
