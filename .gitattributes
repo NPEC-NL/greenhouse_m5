@@ -1,0 +1,2 @@
+snapscan/segmentation[[:space:]]grass/test_plant/*.raw filter=lfs diff=lfs merge=lfs -text
+snapscan/segmentation[[:space:]]grass/test_plant/*.hdr filter=lfs diff=lfs merge=lfs -text
