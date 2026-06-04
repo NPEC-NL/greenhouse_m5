@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "greenhouse-m5"
+version = "0.1.0"
+description = "Utilities for inspecting and loading NPEC greenhouse Module 5 data exports."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "ipykernel>=6.0",
+    "matplotlib>=3.8",
+]
+test = [
+    "pytest>=8.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
